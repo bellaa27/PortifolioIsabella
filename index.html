@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfólio da Isabella</title>
+  <!-- Fonte cursiva -->
+  <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(135deg, #3a0ca3, #7209b7, #560bad);
+      color: #fff;
+      min-height: 100vh;
+    }
+    /* Splash inicial */
+    .entrada {
+      position: fixed;
+      top: 0; left: 0;
+      width: 100%; height: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: linear-gradient(135deg, #7209b7, #560bad);
+      font-size: 4.5rem;
+      font-family: 'Pacifico', cursive;
+      letter-spacing: 4px;
+      color: #e0aaff;
+      text-shadow: 0 0 20px #c77dff, 0 0 40px #9d4edd;
+      z-index: 9999;
+      animation: fadeIn 2s ease-in-out;
+      overflow: hidden;
+    }
+    .hidden {
+      display: none;
+    }
+    @keyframes fadeIn {
+      from {opacity: 0; transform: scale(0.9);}
+      to {opacity: 1; transform: scale(1);}
+    }
+    /* Uvinhas caindo */
+    .uva {
+      position: absolute;
+      top: -50px;
+      font-size: 2rem;
+      animation: cair linear infinite;
+      color: #a020f0;
+    }
+    @keyframes cair {
+      0% {transform: translateY(-50px);}
+      100% {transform: translateY(110vh);}
+    }
+    /* Conteúdo principal */
+    .conteudo {
+      display: none;
+      padding-bottom: 3rem;
+    }
+    .conteudo.show {
+      display: block;
+    }
+    header {
+      padding: 2rem;
+      font-size: 2rem;
+      font-weight: bold;
+      text-align: center;
+      background: rgba(255,255,255,0.05);
+      box-shadow: 0 4px 10px rgba(0,0,0,0.4);
+    }
+    nav {
+      display: flex;
+      justify-content: center;
+      gap: 1.5rem;
+      flex-wrap: wrap;
+      margin: 2rem 0;
+    }
+    button {
+      background: #9d4edd;
+      border: none;
+      padding: 1.5rem 3rem;
+      border-radius: 12px;
+      font-size: 1.3rem;
+      cursor: pointer;
+      transition: 0.3s;
+      font-weight: bold;
+      color: #fff;
+      box-shadow: 0 6px 15px rgba(0,0,0,0.3);
+    }
+    button:hover {
+      background: #7b2cbf;
+      transform: scale(1.1);
+    }
+    section {
+      margin: 2rem auto;
+      padding: 2rem;
+      width: 85%;
+      background: rgba(255,255,255,0.08);
+      border-radius: 15px;
+      box-shadow: 0 6px 20px rgba(0,0,0,0.4);
+      display: none;
+      animation: fadeIn 0.5s ease-in-out;
+    }
+    section.active {
+      display: block;
+    }
+    h2 {
+      margin-bottom: 1rem;
+      color: #e0aaff;
+    }
+    .projeto {
+      background: rgba(255,255,255,0.1);
+      padding: 1rem;
+      margin: 1rem 0;
+      border-radius: 10px;
+      text-align: left;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+    }
+    .projeto a {
+      color: #c77dff;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    .projeto a:hover {
+      text-decoration: underline;
+      color: #f0aaff;
+    }
+  </style>
+</head>
+<body>
+  <!-- Entrada inicial -->
+  <div class="entrada" id="entrada">
+    Portifólio da Isabella
+    <!-- Uvinhas caindo -->
+    <span class="uva" style="left:10%; animation-duration:5s;">🍇</span>
+    <span class="uva" style="left:30%; animation-duration:7s;">🍇</span>
+    <span class="uva" style="left:50%; animation-duration:6s;">🍇</span>
+    <span class="uva" style="left:70%; animation-duration:8s;">🍇</span>
+    <span class="uva" style="left:90%; animation-duration:4s;">🍇</span>
+  </div>
+
+  <!-- Conteúdo principal -->
+  <div class="conteudo" id="conteudo">
+    <header>🚀 Meu Portfólio Tecnológico</header>
+    <nav>
+      <button onclick="showPage('html')">HTML</button>
+      <button onclick="showPage('javascript')">JavaScript</button>
+      <button onclick="showPage('gamma')">Gamma</button>
+      <button onclick="showPage('mobile')">Mobile</button>
+      <button onclick="showPage('python')">Python</button>
+    </nav>
+
+    <section id="html">
+      <h2>Projetos em HTML</h2>
+      <div class="projeto"><a href="https://github.com/bellaa27/copa">Projeto Copa</a></div>
+      <div class="projeto"><a href="#"></a></div>
+    </section>
+
+    <section id="javascript">
+      <h2>Projetos em JavaScript</h2>
+      <div class="projeto"><a href="https://bellaa27.github.io/primeira-aula-backend/html">Primeiros Codigos</a></div>       <div class="projeto"><a href="https://github.com/bellaa27/links2">Media SE</a></div>       <div class="projeto"><a href="https://github.com/bellaa27/-variaveis">Variaveis</a></div>       <div class="projeto"><a href="https://github.com/bellaa27/for">Usando For</a></div>       <div class="projeto"><a href="https://github.com/bellaa27/brake">Brake</a></div>       <div class="projeto"><a href="https://github.com/bellaa27/filtrar">Filtrar</a></div>       <div class="projeto"><a href="https://github.com/bellaa27/quatro-codigos-juntos-">4 Codigos Juntos</a></div>       <div class="projeto"><a href="https://github.com/bellaa27/leitura-">Leitura</a></div>       <div class="projeto"><a href="https://github.com/bellaa27/clientejs">Cliente</a></div>       <div class="projeto"><a href="https://github.com/bellaa27/selection">Selection</a></div>       <div class="projeto"><a href="https://github.com/bellaa27/livros">Livros</a></div>
+    </section>
+
+    <section id="gamma">
+      <h2>Projetos em Gamma</h2>
+      <div class="projeto"><a href="https://gamma.app/docs/Apresentacao-do-App-Escolar-Gestao-Completa-na-Palma-da-Mao-t82h2lwr6prdzdu?mode=doc">Projeto Apresentação Escolar</a></div>
+      <div class="projeto"><a href="https://gamma.app/docs/Propriedade-Intelectual-de-Criacao-Protegendo-o-Valor-da-Inovacao-lfmed5eowz15fz3">Projeto Propriedade Escolar</a></div>
+      <div class="projeto"><a href="https://gamma.app/docs/Startups-de-2026-A-Nova-Onda-de-Crescimento-Global-l4z1z9s7buwla75">Projeto Startups</a></div>
+    </section>
+
+    <section id="mobile">
+      <h2>Projetos Mobile</h2>
+      <div class="projeto"><a href="jogo qualquer.png">Joguinho Feito Por Mim</a></div>
+      <div class="projeto"><a href="muda de cor.png">Joguinho Da Cor</a></div>
+      <div class="projeto"><a href="Captura de tela 2026-04-30 084538.png">Joguinho Da Imagem</a></div>      
+    </section>
+
+    <section id="python">
+      <h2>Projetos em Python</h2>
+      <div class="projeto"><a href="#">Projeto Python 1</a></div>
+      <div class="projeto"><a href="#">Projeto Python 2</a></div>
+    </section>
+  </div>
+
+  <script>
+    // Função para mostrar seções
+    function showPage(pageId) {
+      document.querySelectorAll("section").forEach(sec => sec.classList.remove("active"));
+      document.getElementById(pageId).classList.add("active");
+      window.scrollTo(0,0); // sempre sobe para o topo ao trocar seção
+    }
+
+    // Splash desaparece e mostra o conteúdo
+    window.onload = function() {
+      setTimeout(() => {
+        document.getElementById("entrada").classList.add("hidden");
+        document.getElementById("conteudo").classList.add("show");
+      }, 4000); // 4 segundos
+    }
+  </script>
+</body>
+</html>
