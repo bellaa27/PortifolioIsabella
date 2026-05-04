@@ -32,9 +32,7 @@
       animation: fadeIn 2s ease-in-out;
       overflow: hidden;
     }
-    .hidden {
-      display: none;
-    }
+    .hidden { display: none; }
     @keyframes fadeIn {
       from {opacity: 0; transform: scale(0.9);}
       to {opacity: 1; transform: scale(1);}
@@ -56,9 +54,7 @@
       display: none;
       padding-bottom: 3rem;
     }
-    .conteudo.show {
-      display: block;
-    }
+    .conteudo.show { display: block; }
     header {
       padding: 2rem;
       font-size: 2rem;
@@ -100,13 +96,8 @@
       display: none;
       animation: fadeIn 0.5s ease-in-out;
     }
-    section.active {
-      display: block;
-    }
-    h2 {
-      margin-bottom: 1rem;
-      color: #e0aaff;
-    }
+    section.active { display: block; }
+    h2 { margin-bottom: 1rem; color: #e0aaff; }
     .projeto {
       background: rgba(255,255,255,0.1);
       padding: 1rem;
@@ -129,7 +120,7 @@
 <body>
   <!-- Entrada inicial -->
   <div class="entrada" id="entrada">
-    Portifólio da Isabella
+    Portfólio da Isabella
     <!-- Uvinhas caindo -->
     <span class="uva" style="left:10%; animation-duration:5s;">🍇</span>
     <span class="uva" style="left:30%; animation-duration:7s;">🍇</span>
@@ -140,7 +131,7 @@
 
   <!-- Conteúdo principal -->
   <div class="conteudo" id="conteudo">
-    <header>Portifólio da Isabella Cardoso</header>
+    <header>Portfólio da Isabella Cardoso</header>
     <nav>
       <button onclick="showPage('html')">HTML</button>
       <button onclick="showPage('javascript')">JavaScript</button>
@@ -149,14 +140,25 @@
       <button onclick="showPage('python')">Python</button>
     </nav>
 
-    <section id="html">
+    <section id="html" class="active">
       <h2>Projetos em HTML</h2>
       <div class="projeto"><a href="https://github.com/bellaa27/copa">Projeto Copa</a></div>
       <div class="projeto"><a href="https://bellaa27.github.io/PACMAN2/pac.html">Projeto Pacman</a></div>
+    </section>
 
     <section id="javascript">
       <h2>Projetos em JavaScript</h2>
-      <div class="projeto"><a href="https://bellaa27.github.io/primeira-aula-backend/html">Primeiros Codigos</a></div>       <div class="projeto"><a href="https://github.com/bellaa27/links2">Media SE</a></div>       <div class="projeto"><a href="https://github.com/bellaa27/-variaveis">Variaveis</a></div>       <div class="projeto"><a href="https://github.com/bellaa27/for">Usando For</a></div>       <div class="projeto"><a href="https://github.com/bellaa27/brake">Brake</a></div>       <div class="projeto"><a href="https://github.com/bellaa27/filtrar">Filtrar</a></div>       <div class="projeto"><a href="https://github.com/bellaa27/quatro-codigos-juntos-">4 Codigos Juntos</a></div>       <div class="projeto"><a href="https://github.com/bellaa27/leitura-">Leitura</a></div>       <div class="projeto"><a href="https://github.com/bellaa27/clientejs">Cliente</a></div>       <div class="projeto"><a href="https://github.com/bellaa27/selection">Selection</a></div>       <div class="projeto"><a href="https://github.com/bellaa27/livros">Livros</a></div>
+      <div class="projeto"><a href="https://bellaa27.github.io/primeira-aula-backend/html">Primeiros Codigos</a></div>
+      <div class="projeto"><a href="https://github.com/bellaa27/links2">Media SE</a></div>
+      <div class="projeto"><a href="https://github.com/bellaa27/-variaveis">Variaveis</a></div>
+      <div class="projeto"><a href="https://github.com/bellaa27/for">Usando For</a></div>
+      <div class="projeto"><a href="https://github.com/bellaa27/brake">Brake</a></div>
+      <div class="projeto"><a href="https://github.com/bellaa27/filtrar">Filtrar</a></div>
+      <div class="projeto"><a href="https://github.com/bellaa27/quatro-codigos-juntos-">4 Codigos Juntos</a></div>
+      <div class="projeto"><a href="https://github.com/bellaa27/leitura-">Leitura</a></div>
+      <div class="projeto"><a href="https://github.com/bellaa27/clientejs">Cliente</a></div>
+      <div class="projeto"><a href="https://github.com/bellaa27/selection">Selection</a></div>
+      <div class="projeto"><a href="https://github.com/bellaa27/livros">Livros</a></div>
     </section>
 
     <section id="gamma">
